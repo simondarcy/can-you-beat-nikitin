@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Can you beat Nikitin?</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="description" content="Can you beat Vladimir Nikitin? Play the game and find out!" />
+    <link rel="stylesheet" href="css/style.css?v=8"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+
+
+    <meta property="fb:app_id" content="212765848759773"/>
+    <meta property="og:title" content="Can you beat Nikitin?"/>
+    <meta property="og:type" content="Article"/>
+    <meta property="og:url" content="/can-you-beat-nikitin/"/>
+    <meta property="og:image" content="https://www.rte.ie/can-you-beat-nikitin/img/social.jpg"/>
+    <meta property="og:site_name" content="RTE.ie"/>
+    <meta property="og:description" content="Can you beat Vladimir Nikitin? Play the game and find out!"/>
+
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:site" content="@rte"/>
+    <meta name="twitter:title" content="Can you beat Nikitin?"/>
+    <meta name="twitter:domain" content="rte.ie"/>
+    <meta name="twitter:creator" content="@rtesport"/>
+    <meta name="twitter:description" content="Can you beat Vladimir Nikitin? Play the game and find out!"/>
+    <meta name="twitter:image:src" content="http://www.rte.ie/can-you-beat-nikitin/img/social.jpg">
+    <meta name="twitter:image" content="https://www.rte.ie/can-you-beat-nikitin/img/social.jpg"/>
+
+</head>
+<body>
+
+
+<div class="container">
+
+    <!-- The intro screen -->
+    <div id="intro" class="fix-height">
+        <div class="top">
+            <img src="img/logo-4.svg" class="logo"/>
+        </div>
+        <div class="bottom">
+            <div class="inner">
+                <img src="img/fixture.svg" class="fixture"/>
+                <img src="img/btn-fight.svg"/>
+            </div>
+        </div>
+    </div>
+
+    <!-- Game over screen -->
+    <div id="end" class="fix-height">
+        <div class="top">
+            <img src="img/you-lose.svg" class="you-lose"/>
+        </div>
+        <div class="bottom">
+            <div class="inner">
+            <img src="img/fixture.svg" class="fixture"/>
+            <div class="scores">
+                <div class="score"><img src="img/score-conlan.svg"/></div>
+                <div class="score"><img src="img/score-nikitin.svg"/></div>
+            </div>
+            <img src="img/nikitin-wins-message.svg" class="winner-message"/>
+            <div class="btn-container">
+                <img src="img/btn-try-again.svg" id="replay"/>
+                <img src="img/btn-share.svg" id="share" />
+            </div>
+            </div>
+        </div>
+    </div>
+    
+        <!-- Social -->
+    <div id="social" class="fix-height">
+        <div class="top">
+            <img src="img/you-lose.svg" class="you-lose"/>
+        </div>
+        <div class="bottom">
+            <div class="inner">
+            <div class="btn-container">
+            	<div class="share-text">SHARE</div>
+
+                <a href="https://www.facebook.com/sharer/sharer.php?u=http://www.rte.ie/can-you-beat-nikitin/">
+   					<img src="img/btn-facebook.svg" id="facebook"/>
+                </a>
+                <a href="https://twitter.com/share?url=http://www.rte.ie/can-you-beat-nikitin/&amp;text=Can you beat Nikitin%3F&amp;via=rtesport" target="_blank">
+                <img src="img/btn-twitter.svg" id="twitter" />
+                </a>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- The main game itself -->
+    <div id="game" class="fix-height">
+        <div id="score"></div>
+        <div class="fighters fix-height">
+            <div id="conlan" class="boxer"></div>
+            <div id="nikitin" class="boxer"></div>
+        </div>
+    </div>
+    
+    <!-- RTE Logo -->
+    <div id="rte">
+    	<img src="img/rte-logo.svg"/>
+    </div>
+
+
+</div>
+
+<!-- AUDIO -->
+
+<audio src="audio/bell.wav" id="sound-bell" preload></audio>
+<audio src="audio/punch.wav" id="sound-punch" preload></audio>
+<audio src="audio/boo.wav" id="sound-boo" preload></audio>
+
+<!-- END AUDIO -->
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript" src="js/boxing.js?v=8"></script>
+
+</body>
+</html>
